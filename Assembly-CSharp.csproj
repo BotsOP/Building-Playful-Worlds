@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{04c1b6d8-24b4-9537-b8f0-c3a52c078363}</ProjectGuid>
+    <ProjectGuid>{8c27ccf0-8f32-d024-8c43-3248f28a62e4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,8 +45,43 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scriptable Objects\Inventory\Scripts\InventoryObject.cs" />
+     <Compile Include="Assets\Scriptable Objects\Items\Script\DefaulObject.cs" />
+     <Compile Include="Assets\Scriptable Objects\Items\Script\EquipmentObject.cs" />
+     <Compile Include="Assets\Scriptable Objects\Items\Script\ItemObject.cs" />
+     <Compile Include="Assets\Scriptable Objects\Items\Script\PotionObject.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyStats.cs" />
+     <Compile Include="Assets\Scripts\Enemy\UIBillboard.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IDamagable.cs" />
+     <Compile Include="Assets\Scripts\Inventory\DisplayInventory.cs" />
+     <Compile Include="Assets\Scripts\Inventory\Item.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerCameraController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerInventory.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerShoot.cs" />
+     <Compile Include="Assets\Scripts\Spells\Fireball.cs" />
+     <Compile Include="Assets\Scripts\Spells\Firebomb.cs" />
+     <Compile Include="Assets\Scripts\Spells\Lightning.cs" />
+     <Compile Include="Assets\Scripts\Spells\Meteor.cs" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -578,39 +613,39 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{0d799fd5-3eb8-60bd-0e49-648f6d9f272d}</Project>
+      <Project>{a16e9f57-0380-d335-5f1b-34cc349fb078}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{7fba2f05-2ba5-88e8-5ae6-25bd702bd2ad}</Project>
+      <Project>{700e5854-4e0f-54b6-5d66-3762758ea82e}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{71caf650-e7a7-e717-84b1-e0a8b1b5d453}</Project>
+      <Project>{06d325e6-4138-b90c-106c-50a75e396acd}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{8ecd4409-7798-134b-26df-292a752b1af3}</Project>
+      <Project>{5492cb06-7891-3b3b-632e-a51dea833c3a}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{346d54d1-811b-6fa0-8097-079081d24996}</Project>
+      <Project>{c8ca33ee-35f3-4819-7397-491d7c519b3e}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
-      <Project>{2e15cd14-2fbd-b88b-2da9-57d27b7e5008}</Project>
+      <Project>{78d251eb-a4ae-011a-1b0a-a9614866a809}</Project>
       <Name>Unity.CollabProxy.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{968b3c13-95cf-d7a6-4fc5-49abf79e1de3}</Project>
+      <Project>{ca6c2f29-89fd-0da7-07ca-293b433bb715}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{47bec04a-1a3e-0c64-0928-483eefb387e8}</Project>
+      <Project>{e3de85b7-ed89-4d8b-11ea-e321bda35d9d}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{abb19ae2-72ec-5071-f36b-b546dd7d866e}</Project>
+      <Project>{dc410366-6c94-b977-f10b-a7ad03841317}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>

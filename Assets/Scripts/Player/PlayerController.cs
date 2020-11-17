@@ -58,8 +58,6 @@ public class PlayerController : MonoBehaviour
 
     private void Sprint()
     {
-        
-
         if(Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
         {
             Debug.Log(shouldIncrease);
